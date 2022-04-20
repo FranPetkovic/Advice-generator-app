@@ -1,0 +1,79 @@
+:root{
+    --svjZelena:hsl(193, 38%, 86%);
+    --zelena:hsl(150, 100%, 66%);
+    --sivoPlava:hsl(217, 19%, 38%);
+    --tamnoSivoPlava:hsl(217, 19%, 24%);
+    --tamnoPlava:hsl(218, 23%, 16%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: var(--tamnoPlava);
+    font-weight:800;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    position: relative;
+    background-color: var(--tamnoSivoPlava);
+    text-align: center;
+    border-radius: 20px;
+}
+.brojSavjeta{
+    color: var(--zelena);
+    margin: 30px;
+    font-weight: 100;
+}
+.savjet{
+    font-size:28px ;
+    color: white;
+    max-width: 450px;
+    text-align: center;
+    margin: 30px;
+}
+.main svg{
+    margin: 20px;
+}
+.razdvajanje{
+    margin-bottom: 70px!important;
+}
+.kocka{
+    position: absolute;
+    background-color: var(--zelena);
+    width: fit-content;
+    border-radius: 50%;
+    padding: 0px;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,-50%);
+    border: none;
+}
+.kocka:hover{
+    box-shadow: 0px 0px 80px 5px var(--zelena);
+}
+.kocka:active{
+    box-shadow: 0px 0px 80px 10px var(--zelena);
+}
+.razdvajanje2{
+    display: none;
+}
+@media only screen and (max-width: 425px) {
+    .main{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .razdvajanje{
+        display: none;
+    }
+    .razdvajanje2{
+        display: block;
+        margin-bottom: 70px!important;
+    }
+}
